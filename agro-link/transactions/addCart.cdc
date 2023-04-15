@@ -6,8 +6,6 @@ transaction(name: String, units: Int){
                             ?? panic("No Groceries Available!")
     
     AgroLink.addToCart(name: name, units: units)
-    // AgroLink.addToCart(name: "Orange", units: 25)
-
     log(AgroLink.grocery.keys)
   }
   pre{
