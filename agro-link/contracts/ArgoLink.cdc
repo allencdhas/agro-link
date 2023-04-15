@@ -1,32 +1,7 @@
  pub contract AgroLink{
-
-    // pub resource interface InventoryPublic {
-    //     pub var gname: String
-    //     pub var gnos: Int
-    //     pub var gprice: UFix64
-    // }
-
-    // pub resource Inventory: InventoryPublic {
-    //     pub var gname: String
-    //     pub var gnos: Int
-    //     pub var gprice: UFix64
-
-    //     init(_name: String, _nos: Int, _price: UFix64){ 
-    //         self.gname = _name
-    //         self.gnos = _nos
-    //         self.gprice = _price
-    //     }
-    // }
-  
-
-    // pub fun createInventory(name: String, nos: Int, price: UFix64): @Inventory{
-    //     return <- create Inventory(_name: name, _nos: nos, _price: price)
-    // }
 //
 //Farmer's Fucntionality
 //
-
-
     pub resource Grocery{
         pub var grocery: String
         pub var units: Int
@@ -83,11 +58,5 @@
     pub fun addToCart(name: String, units: Int){
         self.grocery[name] = units
     }
-
-    // pub fun cartPrice(){
-    //     pre{
-    //         self.items
-    //     }
-    // } 
 }
  
